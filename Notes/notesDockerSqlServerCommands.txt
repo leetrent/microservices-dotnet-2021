@@ -1,0 +1,10 @@
+docker pull mcr.microsoft.com/mssql/server
+
+docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=SwfN12345678' -p 1433:1433 -d mcr.microsoft.com/mssql/server
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=!1Sunday" -p 1433:1433 --name sqlserver -h sql1 -d mcr.microsoft.com/mssql/server:2019-latest
+
+
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=!1Sunday" -p 1433:1433 -d mcr.microsoft.com/mssql/server
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pwd!4321" -p 1433:1433 -d mcr.microsoft.com/mssql/server

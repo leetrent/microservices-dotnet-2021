@@ -1,0 +1,32 @@
+$ docker run -d -p 27017:27017 --name shopping-mongo mongo
+
+$ docker ps
+
+$ docker logs -f shopping-mongo
+
+# Open interactive terminal:
+$ docker exec -it shopping-mongo /bin/bash
+
+$ ls
+
+# Open mongo terminal:
+$ mongo
+
+# List current Mongo databases:
+$ show dbs
+$ show databases
+
+# Create new database:
+$ use CatalogDb
+
+
+
+# Start MongoDB CLI:
+$ mongo
+
+# List current Mongo databases:
+$ show dbs
+$ show databases
+
+# List MongoDB collections:
+$ show collections
